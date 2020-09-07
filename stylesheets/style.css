@@ -1,0 +1,38 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#videoBg{
+    position: fixed;
+    z-index: -10;
+    left:0;
+    top: 0;
+}
+
+@media(min-aspect-ratio:16/9){
+    #videoBg{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    #videoBg{
+        width: auto;
+        height: 100%;
+    }
+}
+/*
+
+@media(max-width:500px){
+    #videoBg{
+        display: none;
+    }
+    body{
+        background: url(/images/maxresdefault.jpg);
+        background-size:cover ;
+        background-repeat: no-repeat;
+
+    }
+}
+
+*/
